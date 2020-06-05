@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Sri Lanka Technological Campus</title>
+  <!-- SLTC icon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style type="text/css">
+    .header-text {
+      left: 301px;
+      height: 14px;
+      text-align: left;
+      font: Bold 12px/14px Roboto;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    .body-text {
+      text-align: left;
+      font: Medium 14px/17px Roboto;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+    }
+
+    .event-text-body {
+      text-align: center;
+      font: Bold 14px/17px Roboto;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    .event-text-body-2 {
+      text-align: left;
+      font: Bold 14px/17px Roboto;
+      letter-spacing: 0px;
+      color: black;
+      opacity: 1;
+    }
+
+    .event-text-head {
+      text-align: center;
+      font: Medium 30px/37px Roboto;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    .test-text {
+      text-align: left;
+      font: Bold 24px/29px Roboto;
+      letter-spacing: 0px;
+      color: #E4E4E4;
+      opacity: 1;
+    }
+
+    .course-heading {
+      text-align: left;
+      padding-left: 1rem;
+      font: Bold 18px/22px Roboto;
+      letter-spacing: 0px;
+      color: #1B4383;
+      opacity: 1;
+    }
+
+    .course-body {
+      text-align: left;
+      padding-left: 1rem;
+      font: Bold 14px/17px Roboto;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+    }
+
+    .header-image {
+
+      width: 100px;
+      background: transparent 0% 0% no-repeat padding-box;
+      opacity: 1;
+    }
+
+    .logo-text {
+      text-align: left;
+      font: Bolder 18px/22px Roboto;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+    }
+
+    .logo-text-body {
+      text-align: left;
+      font: Bold 12px/14px Roboto;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+    }
+
+    .main-nav {
+      text-align: left;
+      font: Bold 12px/14px Roboto;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+    }
+
+    .carousel-caption {
+      position: fixed;
+      text-align: start;
+      top: 20px;
+    }
+
+    .carousel-caption-heading {
+      text-align: left;
+      font: Bold 35px/45px Roboto;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+
+    }
+
+    .carousel-caption-para {
+      text-align: left;
+      font: Medium 18px/22px Roboto;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    .carousel-button {
+      /* width: 160px;
+      height: 40px; */
+      background: #CA4B5F 0% 0% no-repeat padding-box;
+      border-radius: 4px;
+      opacity: 1;
+    }
+
+    .carousel-button-boardered {
+      border: 2px solid #FFFFFF;
+      border-radius: 4px;
+      opacity: 1;
+    }
+
+    .carousel-button-text {
+      width: 66px;
+      height: 14px;
+      text-align: left;
+      font: Bold 12px/14px Roboto;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    .carousel-inner {
+      height: 60vh;
+    }
+
+    .carousel-multi-item.v-2 .carousel-inner .carousel-item.active,
+    .carousel-multi-item.v-2 .carousel-item-next,
+    .carousel-multi-item.v-2 .carousel-item-prev {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .carousel-multi-item.v-2 .carousel-item-right.active,
+    .carousel-multi-item.v-2 .carousel-item-next {
+      -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+
+    .carousel-multi-item.v-2 .carousel-item-left.active,
+    .carousel-multi-item.v-2 .carousel-item-prev {
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    .carousel-multi-item.v-2 .carousel-item-right,
+    .carousel-multi-item.v-2 .carousel-item-left {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    .map-container-9 {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+
+    .map-container-9 iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    nav.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <!-- Breadcrumb Header-->
+    <nav class="navbar navbar-expand-md navbar-dark  darken-4 mb-5 no-content "
+      style="margin-bottom: 1rem!important; background: #0D2D62 0% 0% no-repeat padding-box;">
+      <div class="mr-auto">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb clearfix d-none d-md-inline-flex pt-0">
+            <li class="breadcrumb-item">
+              <h6 class="header-text"><i class="fas fa-phone-alt mx-2"></i>+94 11 2100 500 / +94 71 1100 500</h6>
+            </li>
+            <li class="breadcrumb-item">
+              <h6 class="header-text"><i class="fas fa-map-marker-alt mx-2"></i>Ingiriya Road, Padukka, Sri Lanka.</h6>
+            </li>
+            <li class="breadcrumb-item">
+              <h6 class="header-text"><i class="fas fa-envelope-open mx-2"></i>info@sltc.ac.lk</h6>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link">
+
+            <h6 class="header-text" data-toggle="modal" data-target="#modalLRFormDemo"> <i
+                class="fas fa-sign-in-alt mx-2"></i>Login / Register </h6>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!-- SLTC LOGO -->
+    <img class="header-image rounded mx-auto d-block" src="/img/svg/logo.svg">
+    <span class="logo-text text-center" style="display: block;">Sri Lanka Technological Campus</span>
+    <span class="logo-text-body text-center" style="display: block; margin-bottom: 1rem!important;">University</span>
+
+
+
+    <!-- Main Nav -->
+    <!--Navbar-->
+    <nav class="sticky navbar navbar-expand-lg  navbar-light white">
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <h6 class="main-nav">HOME</h6>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link main-nav" href="#">
+              <h6 class="main-nav">WHO WE ARE</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link main-nav" href="#">
+              <h6 class="main-nav">STUDY</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link main-nav" href="#">
+              <h6 class="main-nav">EDUCATION</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <h6 class="main-nav">RESEARCH</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <h6 class="main-nav">STAFF & STUDENTS</h6>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <h6 class="main-nav">CAREERS</h6>
+            </a>
+          </li>
+
+        </ul>
+        <!-- Links -->
+
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <h6 class="main-nav"> <i class="fas fa-search"></i><input class="form-control mr-sm-2" type="text"
+                placeholder="Search" aria-label="Search"></h6>
+
+          </div>
+        </form>
+      </div>
+      <!-- Collapsible content -->
+
+    </nav>
+
+
+  </header>
+
+
+  <!-- Carousel -->
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators d-md-inline-flex d-lg-inline-flex d-sm-none">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="/img/carousel/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" alt="First slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive text-left carousel-caption-heading">Inspiration, Innovation and<br>
+            Discovery.</h3>
+          <p class="carousel-caption-para d-none d-md-block d-lg-block">Any successful career starts with good
+            education. Together with us you will
+            have deeper<br>
+            knowledge of the subjects that will be especially useful for you when climbing the career<br> ladder.</p>
+          <div class="btn-group">
+            <button type="button" class="btn  carousel-button mr-3"><i class="far fa-hand-point-right mx-2"></i>Apply
+              Now</button>
+            <button type="button" class="btn  btn-outline-default  waves-effect">Learn More</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view">
+          <img class="d-block w-100" src="/img/carousel/books-on-shelf-in-library-256517.jpg" alt="Second slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive text-left carousel-caption-heading">Inspiration, Innovation and<br>
+            Discovery.</h3>
+          <p class="carousel-caption-para d-none d-md-block d-lg-block">Any successful career starts with good
+            education. Together with us you will
+            have deeper<br>
+            knowledge of the subjects that will be especially useful for you when climbing the career<br> ladder.</p>
+
+          <div class="btn-group">
+            <button type="button" class="btn  carousel-button mr-3"><i class="far fa-hand-point-right mx-2"></i>Apply
+              Now</button>
+            <button type="button" class="btn  btn-outline-default  waves-effect">Learn More</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view">
+          <img class="d-block w-100" src="/img/carousel/victoria-heath-b7CRDcwfNFU-unsplash.jpg" alt="Third slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive text-left carousel-caption-heading">Inspiration, Innovation and<br>
+            Discovery.</h3>
+          <p class="carousel-caption-para d-none d-md-block d-lg-block">Any successful career starts with good
+            education. Together with us you will
+            have deeper<br>
+            knowledge of the subjects that will be especially useful for you when climbing the career<br> ladder.</p>
+          <div class="btn-group">
+            <button type="button" class="btn  carousel-button mr-3"><i class="far fa-hand-point-right mx-2"></i>Apply
+              Now</button>
+            <button type="button" class="btn  btn-outline-default  waves-effect">Learn More</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+
+
+
+  <!-- About -->
+  <!--Section: Content-->
+  <section class="dark-grey-text container-fluid">
+
+    <div class="row pr-lg-5">
+      <div class="col-md-7 mb-4">
+
+        <div class="view">
+          <img src="img/raw/about.png" class="img-fluid" alt="smaple image">
+        </div>
+
+      </div>
+      <div class="col-md-5 d-flex align-items-center">
+        <div>
+
+          <h3 class="font-weight-bold mb-4">A Few Words <br>About the University</h3>
+          <hr
+            style="width:40%;text-align:left;margin-left:0;height:2px;border-width:0;color:gray;background-color:gray">
+
+          <p class="body-text">Lorem ipsum dolor sit amet consectetur adip elit. Maiores deleniti explicabo voluptatem
+            quisquam nulla
+            asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis
+            adipisci, velit dolore magnam.</p>
+
+          <div class=" mt-4 mb-5">
+            <a class="black-text font-weight-bold" href="#!">Read More <i class="fas fa-angle-double-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Featured Courses -->
+  <!-- Section: Block Content -->
+  <section class="dark-grey-text text-left mb-4 container-fluid">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-8 mb-4" style="background: #344175 0% 0% ">
+        <h3 class="font-weight-bold text-white mb-4" style="padding: 2rem;  padding-bottom: 0;">Our Featured Courses
+        </h3>
+        <hr
+          style="width:40%;text-align:left;margin-left:2rem;height:2px;border-width:0;color:gray;background-color:gray">
+
+        <div class="row">
+          <!-- Course Image -->
+          <div class="col-sm-3 offset-1 text-center mb-4" style="padding:0">
+
+            <img src="img/courses/courses (1).jpg" class="img-fluid" alt="smaple image"
+              style="max-width: 100%; height: auto;">
+
+          </div>
+          <!-- Course Body -->
+          <div class="col-sm-6 text-left mb-4" style="padding: 1rem; background-color: white;">
+            <br>
+            <p class="course-heading">Digital Marketing Course</p>
+            <p class="course-body">Charles Banks</p>
+            <div class=" d-flex flex-row-reverse p-2"> <i class="fas fa-home"></i>
+              <i class="fas fa-laptop mx-2"></i>
+              <i class="fas fa-star"></i></div>
+          </div>
+        </div>
+
+        <div class="row ">
+
+          <div class="col-sm-3 offset-1 mb-4 " style="padding:0">
+            <img src="img/courses/courses (2).jpg" alt="thumbnail" class="img-fluid"
+              style="max-width: 100%; height: auto;">
+          </div>
+
+          <div class="col-sm-6 text-left mb-4" style="padding: 1rem; background-color: white;">
+            <br>
+            <p class="course-heading">Digital Marketing Course</p>
+            <p class="course-body">Charles Banks</p>
+            <div class=" d-flex flex-row-reverse p-2"> <i class="fas fa-home"></i>
+              <i class="fas fa-laptop mx-2"></i>
+              <i class="fas fa-star"></i></div>
+
+
+          </div>
+        </div>
+        <div class="text-center mt-4 mb-4">
+          <a class="white-text font-weight-bold" href="#!">Browse all Courses <i
+              class="fas fa-angle-double-right"></i></a>
+        </div>
+
+      </div>
+      <!-- Grid column Main Image-->
+      <div class="col-md-4 mb-4 " style="padding:0!important">
+
+        <div class="view overlay">
+          <img src="img/annie-spratt-vGgn0xLdy8s-unsplash.jpg" class="img-fluid" style="max-width: 100%; height: auto; "
+            alt="Sample project image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- Section: Block Content -->
+
+
+
+  <!-- Counter -->
+  <!--Section: Content-->
+  <section class=" container-fluid ">
+
+    <!-- <h3 class="text-center font-weight-bold mb-4">Statistics</h3>
+      <hr
+        style="width:15%;text-align:center;height:2px;border-width:0;color:gray;background-color:gray;margin-bottom: 2rem;"> -->
+    <div class="row d-flex justify-content-center">
+
+      <div class="col-md-6 col-lg-3 mb-4 text-center">
+        <h4 class="h1 font-weight-normal mb-3">
+          <i class="fas fa-graduation-cap indigo-text"></i>
+          <span class="d-inline-block count-up" data-from="0%" data-to="97" data-time="2000">97</span><span>%</span>
+        </h4>
+        <p class="font-weight-normal text-muted">Graduates</p>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4 text-center">
+        <h4 class="h1 font-weight-normal mb-3">
+          <i class="fas fa-briefcase indigo-text"></i>
+          <span class="d-inline-block count1" data-from="0" data-to="30" data-time="2000">30</span><span>+</span>
+        </h4>
+        <p class="font-weight-normal text-muted">Certified Teachers</p>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4 text-center">
+        <h4 class="h1 font-weight-normal mb-3">
+          <i class="fas fa-university indigo-text"></i>
+          <span class="d-inline-block count2" data-from="0" data-to="3" data-time="2000">3</span>
+        </h4>
+        <p class="font-weight-normal text-muted">Student Campuses</p>
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4 text-center">
+        <h4 class="h1 font-weight-normal mb-3">
+          <i class="fas fa-user-graduate indigo-text"></i>
+          <span class="d-inline-block count3" data-from="0" data-to="4000" data-time="2000">4000</span><span>+</span>
+        </h4>
+        <p class="font-weight-normal text-muted">Students</p>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Section: Content-->
+
+
+
+  <!-- Jumbotron Hero Text -->
+  <!-- Jumbotron -->
+  <div class="card card-image" style="background-image: url('img/mimi-thian-vdXMSiX-n6M-unsplash.jpg');">
+    <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+      <div class="py-5">
+
+        <!-- Content -->
+
+        <h2 class="orange-text card-title h2 my-4 py-2">TRUSTED BY OVER 4000+ STUDENTS</h2>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+          obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis
+          perferendis vitae cumque et quo impedit.</p>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+
+
+  <!-- Events -->
+  <div class="container-sm my-5">
+    <section class="dark-grey-text text-left container-sm">
+
+      <h3 class="font-weight-bold mb-4 text-center">Events</h3>
+      <hr style="width:20%;text-align:center;height:2px;border-width:0;color:gray;background-color:gray">
+
+      <!-- Grid row -->
+      <div class="row container-sm justify-content-center">
+
+        <!-- Grid column -->
+        <div class="col-md-5 mb-4">
+
+          <div class="view overlay rounded z-depth-1">
+            <img src="img/events/events (2).jpg" class="img-fluid" alt="Sample project image">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 text-center mb-4"
+              style="background-color: blue; padding: 1rem; margin-left: 1rem; margin-right: 1rem;">
+              <h4 class="event-text-head">30</h4>
+              <p class="event-text-body">September</p>
+              <p class="event-text-body">5.00 P.M</p>
+            </div>
+
+            <div class="col-sm-8 text-left mb-4" style="padding: 1rem;">
+              <br>
+              <p class="event-text-body-2">Space Walking Conferrence</p>
+              <p class="event-text-body-2"><i class="indigo-text fas fa-user mx-2"></i>Walter Stanley</p>
+            </div>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 mb-4">
+
+          <div class="view overlay rounded z-depth-1">
+            <img src="img/events/events (1).jpg" class="img-fluid" alt="Sample project image">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 text-center mb-4"
+              style="background-color: blue; padding: 1rem; margin-left: 1rem; margin-right: 1rem;">
+              <h4 class="event-text-head">30</h4>
+              <p class="event-text-body">September</p>
+              <p class="event-text-body">5.00 P.M</p>
+            </div>
+
+            <div class="col-sm-8 text-left " style="padding: 1rem;">
+              <br>
+              <p class="event-text-body-2">Space Walking Conferrence</p>
+              <p class="event-text-body-2"><i class="indigo-text fas fa-user mx-2"></i>Walter Stanley</p>
+            </div>
+          </div>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+      <div class="text-center mt-4 mb-5">
+        <a class="black-text font-weight-bold" href="#!">Browse all Events <i class="fas fa-angle-double-right"></i></a>
+      </div>
+
+    </section>
+  </div>
+  <!--Section: Content-->
+
+
+  <!-- Testimonials -->
+  <div class="container-fluid z-depth-1 py-5 my-5" style="background: #0D2D62 0% 0% no-repeat padding-box;">
+    <section class="mx-md-5 text-center text-lg-left">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-12">
+          <div class="row p-5">
+            <div class="col-lg-8 d-flex flex-column justify-content-between">
+
+              <p class="text-muted mb-4 test-text"><i class="fas fa-quote-left fa-lg"></i> When I researched the
+                programmes available I realized that the University was
+                offering exactly the type of programme in international development that interested me.</p>
+              <div>
+                <p class="font-weight-bold white-text lead mb-2"><strong>Steven Alvarez</strong></p>
+                <p class="font-weight-bold text-muted">Diploma for Graduates in International Development, USA</p>
+              </div>
+            </div>
+            <div class="col-lg-4 d-flex mb-2 align-items-center">
+              <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                <img src="img/kas-YHDWG6-EsYc-unsplash.jpg" class="rounded-circle img-fluid z-depth-1"
+                  alt="woman avatar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Latest News -->
+  <div class="container my-5">
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+
+      <!-- Section heading -->
+      <h3 class="font-weight-bold mb-4 text-center">Latest News</h3>
+      <hr style="width:20%;text-align:center;height:2px;border-width:0;color:gray;background-color:gray">
+
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-4 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay">
+              <img src="img/news/news (2).jpg" class="card-img-top" alt="">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title"><strong>Corona Outbreak</strong></h4>
+              <hr>
+              <!--Text-->
+              <p class="card-text mb-3">Some quick example text to build on the card title and make up the bulk
+                of the card's
+                content.
+              </p>
+              <p class="font-small font-weight-bold dark-grey-text mb-1"><i class="far fa-clock-o"></i>
+                27/08/2019</p>
+              <p class="font-small grey-text mb-0">Anna Smith</p>
+              <p class="text-right mb-0 font-small font-weight-bold"><a>read more <i class="fas fa-angle-right"></i></a>
+              </p>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-4 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay">
+              <img src="img/news/news (1).jpg" class="card-img-top" alt="">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title"><strong>Achievements</strong></h4>
+              <hr>
+              <!--Text-->
+              <p class="card-text mb-3">Some quick example text to build on the card title and make up the bulk
+                of the card's
+                content.
+              </p>
+              <p class="font-small font-weight-bold dark-grey-text mb-1"><i class="far fa-clock-o"></i>
+                27/08/2019</p>
+              <p class="font-small grey-text mb-0">Anna Smith</p>
+              <p class="text-right mb-0 font-small font-weight-bold"><a>read more <i class="fas fa-angle-right"></i></a>
+              </p>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-4 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay">
+              <img src="img/news/news (3).jpg" class="card-img-top" alt="">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title"><strong>Card title</strong></h4>
+              <hr>
+              <!--Text-->
+              <p class="card-text mb-3">Some quick example text to build on the card title and make up the bulk
+                of the card's
+                content.
+              </p>
+              <p class="font-small font-weight-bold dark-grey-text mb-1"><i class="far fa-clock-o"></i>
+                27/08/2019</p>
+              <p class="font-small grey-text mb-0">Anna Smith</p>
+              <p class="text-right mb-0 font-small font-weight-bold"><a>read more <i class="fas fa-angle-right"></i></a>
+              </p>
+            </div>
+            <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+        </div>
+        <!--Grid column-->
+
+      </div>
+
+      <div class="text-center mt-4 mb-5">
+        <a class="black-text font-weight-bold" href="#!">Browse all articles <i
+            class="fas fa-angle-double-right"></i></a>
+      </div>
+
+    </section>
+    <!--Section: Content-->
+  </div>
+
+
+
+  <!-- Why SLTC -->
+  <!--Section: Content-->
+  <section class="dark-grey-text text-center container">
+
+    <!-- Section heading -->
+    <h3 class="font-weight-bold mb-4">Why You Pick <br>Sri Lanka Technological Campus</h3>
+    <hr style="width:40%;text-align:center;height:2px;border-width:0;color:gray;background-color:gray">
+    <br>
+    <!-- Section description -->
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-5 text-center text-lg-left">
+        <img class="img-fluid" src="img/why/sat.png" alt="Sample image">
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-7">
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-1">
+            <i class="fas fa-share fa-lg indigo-text"></i>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-xl-10 col-md-11 col-10">
+            <h5 class="font-weight-bold mb-3">Safety</h5>
+            <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+              quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-1">
+            <i class="fas fa-share fa-lg indigo-text"></i>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-xl-10 col-md-11 col-10">
+            <h5 class="font-weight-bold mb-3">Technology</h5>
+            <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+              quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-1">
+            <i class="fas fa-share fa-lg indigo-text"></i>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-xl-10 col-md-11 col-10">
+            <h5 class="font-weight-bold mb-3">Finance</h5>
+            <p class="mb-0 body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima
+              veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Content-->
+
+  <!-- Gallery -->
+  <div class="container my-5">
+
+
+    <!--Section: Content-->
+    <section class="text-center dark-grey-text">
+
+
+
+      <h3 class="font-weight-bold mb-4">Memories Around SLTC </h3>
+      <hr style="width:20%;text-align:center;height:2px;border-width:0;color:gray;background-color:gray">
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
+
+            <!--Controls-->
+            <div class="controls-top">
+              <a class="btn-floating bg-transparent z-depth-0 m-0" href="#carousel-example-multi" data-slide="prev"><i
+                  class="dark-grey-text fas fa-chevron-left"></i></a>
+              <a class="btn-floating bg-transparent z-depth-0 m-0" href="#carousel-example-multi" data-slide="next"><i
+                  class="dark-grey-text fas fa-chevron-right"></i></a>
+            </div>
+            <!--/.Controls-->
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active">
+                <div class="col-12 col-md-6 mb-4 mx-auto">
+                  <div class="view rounded z-depth-1-half">
+                    <img src="img/gallery/gallery_slider (1).jpg" class="img-fluid rounded" alt="Sample image">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-6 mb-4 mx-auto">
+                  <div class="view rounded z-depth-1-half">
+                    <img src="img/gallery/gallery_slider (2).jpg" class="img-fluid rounded" alt="Sample image">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-6 mb-4 mx-auto">
+                  <div class="view rounded z-depth-1-half">
+                    <img src="img/gallery/gallery_slider (3).jpg" class="img-fluid rounded" alt="Sample image">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-6 mx-auto">
+                  <div class="view rounded z-depth-1-half">
+                    <img src="img/gallery/gallery_slider (4).jpg" class="img-fluid rounded" alt="Sample image">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-6 mb-4 mx-auto">
+                  <div class="view rounded z-depth-1-half">
+                    <img src="img/gallery/gallery_slider (5).jpg" class="img-fluid rounded" alt="Sample image">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-md-6 mb-4 mx-auto">
+                  <div class="view rounded z-depth-1-half">
+                    <img src="img/gallery/gallery_slider (6).jpg" class="img-fluid rounded" alt="Sample image">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+
+  // Gallery Carousel
+    $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function () {
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < 4; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+
+    // Counter
+    (function ($) {
+      $.fn.counter = function () {
+        const $this = $(this),
+          numberFrom = parseInt($this.attr('data-from')),
+          numberTo = parseInt($this.attr('data-to')),
+          delta = numberTo - numberFrom,
+          deltaPositive = delta > 0 ? 1 : 0,
+          time = parseInt($this.attr('data-time')),
+          changeTime = 10;
+
+        let currentNumber = numberFrom,
+          value = delta * changeTime / time;
+        var interval1;
+        const changeNumber = () => {
+          currentNumber += value;
+          //checks if currentNumber reached numberTo
+          (deltaPositive && currentNumber >= numberTo) || (!deltaPositive && currentNumber <= numberTo) ?
+          currentNumber = numberTo: currentNumber;
+          this.text(parseInt(currentNumber));
+          currentNumber == numberTo ? clearInterval(interval1) : currentNumber;
+        }
+
+        interval1 = setInterval(changeNumber, changeTime);
+      }
+    }(jQuery));
+
+    $(document).ready(function () {
+
+      $('.count-up').counter();
+      $('.count1').counter();
+      $('.count2').counter();
+      $('.count3').counter();
+      new WOW().init();
+
+      setTimeout(function () {
+        $('.count5').counter();
+      }, 3000);
+    });
+
+    // Sticky Content Nav
+
+    $(function () {
+
+      $(".sticky-content").sticky({
+        topSpacing: 50,
+        zIndex: 2,
+        stopper: "#footer",
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
+<!-- Footer -->
+<footer id="footer" class="page-footer font-small dark pt-4" style="position: relative; background-color: #1e272e;">
+
+  <div class="container text-left text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Sri Lanka Technological Campus</h6>
+
+        <img src="img/svg/logo.svg" alt="thumbnail" class="img-thumbnail" style="width: 100%">
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <p>
+          <i class="fas fa-home mr-3"></i> Ingiriya Road, Padukka, Sri Lanka.</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@sltc.ac.lk</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> +94 11 2100 500 / +94 71 1100 500</p>
+
+        <button type="button" class="btn btn-outline-info waves-effect" data-toggle="modal"
+          data-target="#modalRegular"><i class="far fa-map mr-2"></i>Visit Us</button>
+
+      </div>
+
+      <hr class="w-100 clearfix d-md-none">
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">News Letter</h6>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <p>
+          Enter your email address to get the latest University news, special events and student activities delivered
+          right to your inbox.</p>
+        <!-- Material input -->
+        <br>
+        <p class="md-form">
+          <i class="fas fa-envelope prefix"></i>
+          <input type="email" id="inputValidationEx" class="form-control validate">
+          <label for="inputValidationEx" data-error="wrong" data-success="right">Type your email</label>
+
+        </p>
+      </div>
+
+
+
+    </div>
+
+    <hr style="color: white;">
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2020 Copyright:
+          <a href="#">
+            <strong>sltc.com</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</html>
+<!--Modal: Map-->
+<div class="modal fade" id="modalRegular" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+      <div class="modal-body mb-0 p-0">
+
+        <!--Google map-->
+        <div id="map-container-google-16" class="z-depth-1-half map-container-9" style="height: 400px">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5602.1276650403015!2d80.09100897357372!3d6.854303108854126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae252d0dda502e5%3A0xcd9bc463bd5822de!2sSri%20Lanka%20Technological%20Campus%20(SLTC)!5e0!3m2!1sen!2slk!4v1591241462872!5m2!1sen!2slk"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+
+      </div>
+
+      <!--Modal Footer-->
+      <div class="modal-footer justify-content-center">
+
+        <button type="button" class="btn btn-info btn-md">Save location <i
+            class="fas fa-map-marker-alt ml-1"></i></button>
+        <button type="button" class="btn btn-outline-info btn-md" data-dismiss="modal">Close <i
+            class="fas fa-times ml-1"></i></button>
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
+
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRFormDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel17" role="tab">
+              <i class="fas fa-user mr-1"></i> Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel18" role="tab">
+              <i class="fas fa-user-plus mr-1"></i> Register</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 17-->
+          <div class="tab-pane fade in show active" id="panel17" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <div class="md-form form-sm">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="text" id="form2" class="form-control form-control-sm">
+                <label for="form2">Your email</label>
+              </div>
+
+              <div class="md-form form-sm">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="form3" class="form-control form-control-sm">
+                <label for="form3">Your password</label>
+              </div>
+              <div class="text-center mt-4">
+                <button class="btn btn-info">Log in
+                  <i class="fas fa-sign-in ml-1"></i>
+                </button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-center text-md-right mt-1">
+                <p>Not a member?
+                  <a href="#" class="blue-text">Sign Up</a>
+                </p>
+                <p>Forgot
+                  <a href="#" class="blue-text">Password?</a>
+                </p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 18-->
+          <div class="tab-pane fade" id="panel18" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="text" id="form14" class="form-control form-control-sm">
+                <label for="form14">Your email</label>
+              </div>
+
+              <div class="md-form form-sm">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="form5" class="form-control form-control-sm">
+                <label for="form5">Your password</label>
+              </div>
+
+              <div class="md-form form-sm">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="form6" class="form-control form-control-sm">
+                <label for="form6">Repeat password</label>
+              </div>
+
+              <div class="text-center form-sm mt-4">
+                <button class="btn btn-info">Sign up
+                  <i class="fas fa-sign-in ml-1"></i>
+                </button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account?
+                  <a href="#" class="blue-text">Log In</a>
+                </p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form -->
